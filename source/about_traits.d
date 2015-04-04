@@ -21,8 +21,8 @@ class AboutTraits {
   @Test
   public void allMembers() {
     auto members = [ __traits(allMembers, MyClass) ];
-    assertEquals(members.length, FILL_IN_THIS_NUMBER);
+    assertEquals(members.length, 3 + 6); // ["__ctor", "__dtor", "foo", "toString", "toHash", "opCmp", "opEquals", "Monitor", "factory"]
     import std.algorithm;
-    assertEquals(members.canFind("foo"), FILL_IN_TRUE_OR_FALSE);
+    assertEquals(members.canFind("foo"), true);
   }
 }
