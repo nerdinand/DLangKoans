@@ -7,7 +7,6 @@ class AboutArrays
 {
   mixin UnitTest;
 
-
   @Test
    void fixed_length_arrays() {
     string[4] fruits = ["banana", "mango", "apple", "orange"];
@@ -16,6 +15,7 @@ class AboutArrays
     int[5] b = 1; // 5 elements with same value 1
     assertEquals(b, FILL_IN_THIS_ARRAY);
   }
+
 
   @Test
   void dynamic_length_arrays() {
