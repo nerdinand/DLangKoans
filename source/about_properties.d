@@ -9,8 +9,8 @@ class AboutProperties {
   @Test
   public void nativeProperties() {
     auto x = 3;
-    assertEquals(x.sizeof, FILL_IN_THIS_NUMBER);
-    assertEquals(typeof(x).stringof, FILL_IN_THIS_STRING);
+    assertEquals(x.sizeof, 4);
+    assertEquals(typeof(x).stringof, "int");
   }
 
   @Test
@@ -18,13 +18,13 @@ class AboutProperties {
     struct Rectangle {
       int width;
       int height;
-      @property auto area() { return width * height;}
+      @property auto area() { return width * height; }
     }
 
     Rectangle r;
     r.width = 4;
     r.height = 3;
-    assertEquals(r.area, FILL_IN_THIS_NUMBER);
+    assertEquals(r.area, 12);
   }
 
 }
